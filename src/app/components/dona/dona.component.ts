@@ -12,9 +12,7 @@ export class DonaComponent {
   @Input() title: string = 'Sin titulo';
 
   @Input('labels') public doughnutChartLabels: Label[] = ['label1', 'label2', 'label3'];
-  @Input('data') public doughnutChartData: MultiDataSet = [
-    this.data,
-  ];
+  @Input('data') public doughnutChartData: MultiDataSet = [];
   public colors: Color[] = [
     { backgroundColor: [ '#6857E6', '#009FEE', '#F02059' ] }
   ];
